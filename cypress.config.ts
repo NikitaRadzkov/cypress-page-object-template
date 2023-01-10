@@ -23,6 +23,6 @@ export default defineConfig({
       // implement node event listeners here
     },
     excludeSpecPattern: '*.studio.*',
-    specPattern: 'cypress/integration/**/*.spec.{js,jsx,ts,tsx}'
+    specPattern: 'cypress/e2e/**/*.cy.{js,jsx,ts,tsx}'
   }
 });

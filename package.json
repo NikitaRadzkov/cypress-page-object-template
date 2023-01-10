@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "cy:open": "npx cypress open --config-file cypress.config.ts",
+    "tsc:check": "npx tsc --project ./cypress/tsconfig.json --noEmit",
+    "tsc:watch": "npm run tsc:check -- --watch",
     "lint": "eslint \"./**\" --max-warnings=0",
     "format": "eslint \"./**\" --fix --max-warnings=0"
   },
