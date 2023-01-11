@@ -2,6 +2,11 @@ import { ENVS, evalUrl } from './cypress/utils/env.utils';
 import { defineConfig } from 'cypress';
 
 export default defineConfig({
+  reporter: 'mochawesome',
+  reporterOptions: {
+    reportFilename: 'index',
+    reportDir: 'cypress/results'
+  },
   chromeWebSecurity: false,
   fixturesFolder: false,
   viewportWidth: 1920,
