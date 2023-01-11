@@ -19,7 +19,7 @@ const _validateUrl = (obj: object, key: string): string => {
   if (Object.keys(obj).includes(key)) {
     return _trimSlash(obj[key]);
   } else {
-    throw new Error(`Key "${key}" in not defined in ENVS.`);
+    throw new Error(`Key "${key}" is not defined in ENVS.`);
   }
 };
 
