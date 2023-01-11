@@ -129,7 +129,7 @@ cypress/videos/
 cypress/screenshots/
 cypress/downloads
 cypress/snapshots/**/__diff_output__
-cypress/gh_artifacts/
+cypress/results/
 # data which we should share between specs
 cypress/spec_data/
 
