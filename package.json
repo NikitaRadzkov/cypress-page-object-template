@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cy:open": "npx cypress open --config-file cypress.config.ts",
+    "cy:open": "npx cypress open",
+    "cy:run": "npx cypress run",
+    "cy:api_chrome_prod": "npm run cy:run -- --spec cypress/e2e/api/** --browser chrome",
+    "cy:ui_chrome_stage": "npm run cy:run -- --spec cypress/e2e/ui/** --browser chrome --env url=stage",
     "tsc:check": "npx tsc --project ./cypress/tsconfig.json --noEmit",
     "tsc:watch": "npm run tsc:check -- --watch",
     "lint": "eslint \"./**\" --max-warnings=0",
