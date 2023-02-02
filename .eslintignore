@@ -1,11 +1,15 @@
 node_modules
 dist
-playwright-report
 allure-report
 allure-results
 rest-results
 logs
+results
+downloads
+screenshots
+dow
 Dockerfile
+Jenkinsfile
 *.properties
 *.spec
 *.log
@@ -22,3 +26,4 @@ Dockerfile
 *.meta
 *.webm
 *.xml
+*.yml

@@ -1,6 +1,6 @@
 import loginActions from '../../actions/ui/login.actions';
 import shopActions from '../../actions/ui/shop.actions';
-import testData from '../../fixtures/ui/filter-price.fixture'
+import testData from '../../fixtures/ui/filter-price.fixture';
 
 describe('Verify filter by price functionality', () => {
   beforeEach(() => {
